@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>I am student controller and index action method</h2>
+<br />
+<div>
+    @Html.ActionLink("Click me", "Index", new { name = "Neitzshe" })
+</div>
+<br />
+@{
+    string name = "Neitzshe";
+}
+@Html.TextBox("txtBox1", "Neitzshe")
+<br />
+@Html.TextBox("txtBox1", name)
+<br />
+@Html.TextBox("txtBox1", name, new { id = "customID", @class = "MyCustomClass", style = "width:300px" })
+<br />
+@Html.CheckBox("chkBox1")
+<br />
+@Html.CheckBox("chkBox2",true,new { })
+<br />
+@Html.Password("MyPassword")
